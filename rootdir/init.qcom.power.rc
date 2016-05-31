@@ -133,6 +133,7 @@ on class_start:late_start
 
 
     trigger enable-low-power
+    write /proc/sys/kernel/sched_boost 0
 
 on property:init.svc.recovery=running
     trigger enable-low-power
