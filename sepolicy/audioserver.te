@@ -2,3 +2,8 @@ set_prop(audioserver, diag_prop);
 allow audioserver diag_device:chr_file { read write };
 allow audioserver diag_device:chr_file open;
 allow audioserver diag_device:chr_file ioctl;
+allow audioserver perfd:unix_stream_socket connectto;
+allow audioserver mpctl_data_file:dir search;
+allow audioserver mpctl_data_file:sock_file write;
+allow audioserver mpctl_socket:dir search;
+allow audioserver mpctl_socket:sock_file write;
