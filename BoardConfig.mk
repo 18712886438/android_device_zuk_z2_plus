@@ -145,6 +145,9 @@ SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
 # Enable dexpreopt to speed boot time
 # WITH_DEXPREOPT := true
 
+# Healthd
+BOARD_PERIODIC_CHORES_INTERVAL_FAST := "60 * 10"
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_z2_plus
 TARGET_RECOVERY_DEVICE_MODULES := libinit_z2_plus
