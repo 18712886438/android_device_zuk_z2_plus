@@ -18,10 +18,16 @@
 /dev/dash                                                       u:object_r:input_device:s0
 /sys/devices/soc/.*ssusb/power_supply/usb(/.*)?                 u:object_r:sysfs_usb_supply:s0
 
+
 /sys/devices/soc/qpnp-smbcharger-[0-9a-f]+/power_supply/battery/capacity u:object_r:sysfs_batteryinfo:s0
 /sys/devices/soc/qpnp-smbcharger-[0-9a-f]+/power_supply/battery/current_now u:object_r:sysfs_batteryinfo:s0
 /sys/devices/soc/qpnp-smbcharger-[0-9a-f]+/power_supply/battery/voltage_now u:object_r:sysfs_batteryinfo:s0
 /sys/devices/soc/qpnp-smbcharger-[0-9a-f]+/power_supply/battery/temp u:object_r:sysfs_batteryinfo:s0
+# CPU tunable for EAS
+/sys/devices/system/cpu/cpu[0-3]/cpufreq/schedutil(/.*)?            u:object_r:sysfs_devices_system_cpu:s0
+
+# Init
+/system/bin/init\.power\.sh                                         u:object_r:init_power_exec:s0
 
 /sys/kernel/debug/msm_core(/.*)?                                u:object_r:debugfs_msm_core:s0
 
