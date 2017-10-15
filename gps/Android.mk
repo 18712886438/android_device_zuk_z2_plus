@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),z2_row)
+ifeq ($(TARGET_DEVICE),z2_x)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

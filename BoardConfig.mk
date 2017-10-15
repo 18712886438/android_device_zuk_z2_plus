@@ -23,9 +23,9 @@
 
 #TARGET_BUILD_VARIANT:=user
 
-TARGET_OTA_ASSERT_DEVICE := z2,Z2,z2row,z2_row
+TARGET_OTA_ASSERT_DEVICE := z2,Z2,z2x,z2_x
 
-PLATFORM_PATH := device/zuk/z2_row
+PLATFORM_PATH := device/zuk/z2_x
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
@@ -67,7 +67,7 @@ TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_CONFIG := z2_row_defconfig
+TARGET_KERNEL_CONFIG := lineage_z2_x_defconfig
 TARGET_KERNEL_SOURCE := kernel/zuk/msm8996
 
 # Audio
@@ -129,8 +129,8 @@ endif
 TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
 
 # Init
-# TARGET_INIT_VENDOR_LIB := libinit_z2_row
-# TARGET_RECOVERY_DEVICE_MODULES := libinit_z2_row
+# TARGET_INIT_VENDOR_LIB := libinit_z2_x
+# TARGET_RECOVERY_DEVICE_MODULES := libinit_z2_x
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
@@ -185,4 +185,4 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/zuk/z2_row/BoardConfigVendor.mk
+-include vendor/zuk/z2_x/BoardConfigVendor.mk

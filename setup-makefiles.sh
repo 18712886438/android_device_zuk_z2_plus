@@ -1,6 +1,6 @@
 #!/bin/bash
 VENDOR=zuk
-DEVICE=z2_row
+DEVICE=z2_x
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor.mk

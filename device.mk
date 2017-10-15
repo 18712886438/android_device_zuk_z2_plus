@@ -21,7 +21,7 @@
 # definition file).
 #
 
-$(call inherit-product-if-exists, vendor/zuk/z2_row/z2_row-vendor.mk)
+$(call inherit-product-if-exists, vendor/zuk/z2_x/z2_x-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay

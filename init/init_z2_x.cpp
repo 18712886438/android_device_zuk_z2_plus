@@ -73,10 +73,10 @@ void vendor_load_properties() {
     int rc;
 
     rc = property_get("ro.product.device", device, NULL);
-    if (!rc || strncmp(device, "z2_row", PROP_VALUE_MAX))
+    if (!rc || strncmp(device, "z2_x", PROP_VALUE_MAX))
         return;
 
-        property_set("ro.product.model", "Z2 Pro");
+        property_set("ro.product.model", "ZUK Edge");
 
     init_alarm_boot_properties();
 }
